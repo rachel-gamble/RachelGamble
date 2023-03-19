@@ -1,12 +1,17 @@
 <template>
   <header>
-    <Navbar />
+    <div class="fs-1 text-center bg-dark header p-3">
+      Rachel Gamble
+    </div>
+    <!-- <Navbar /> -->
   </header>
-  <main>
-    <router-view />
+  <main class="bg-dark">
+    <!-- <router-view /> -->
   </main>
-   <footer class="bg-dark text-light">
-    Made with 💖 by CodeWorks
+  <footer class="bg-dark text-light text-center">
+    <div class="fs-6 footerr">
+      Made with ✨🌙💀 by Sautrah
+    </div>
   </footer>
 </template>
 
@@ -25,16 +30,15 @@ export default {
 }
 </script>
 <style lang="scss">
+.footerr {
+  color: hotpink;
+  text-shadow: 1px 1px 1px darkblue;
+}
+
+.header {
+  color: hotpink;
+  text-shadow: 1px 1px 1px darkblue;
+}
+
 @import "./assets/scss/main.scss";
-
-:root{
-  --main-height: calc(100vh - 32px - 64px);
-}
-
-
-footer {
-  display: grid;
-  place-content: center;
-  height: 32px;
-}
 </style>
